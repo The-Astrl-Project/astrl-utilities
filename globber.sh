@@ -37,14 +37,14 @@ function main()
             ;;
             s)
                 # Glob files found in ./src
-                globber $SOURCE_DIRECTORY
+                globber "${2:-$SOURCE_DIRECTORY}"
 
                 # Exit
                 exit
             ;;
             i)
                 # Glob all files found in ./include
-                globber $INCLUDE_DIRECTORY
+                globber "${2:-$INCLUDE_DIRECTORY}"
 
                 # Exit
                 exit
@@ -83,12 +83,12 @@ function help()
 {
     echo "Astrl: Utilities - Globber Script - Globs all *.c and *.h files found in /src and /include"
     echo
-    echo "Syntax: grabber.sh [-g|h|s|i]"
-    echo "options:"
-    echo "g     Print the GPL license"
-    echo "h     Print this help message"
-    echo "s     Collects and echos all found source files"
-    echo "i     Collects and echos all found header files"
+    echo "Syntax: grabber.sh [options] [directory]"
+    echo "Options:"
+    echo "  -g: Print the GPL license"
+    echo "  -h: Print this help message"
+    echo "  -s: Collects and echos all found source files"
+    echo "  -i: Collects and echos all found header files"
     echo
 }
 

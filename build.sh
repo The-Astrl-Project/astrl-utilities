@@ -95,14 +95,14 @@ function help()
 {
     echo "Astrl: Utilities - Build Script - Provide utility functions for building Astrl projects"
     echo
-    echo "Syntax: build.sh [-g|h|c|b|t|i]"
-    echo "options:"
-    echo "g     Print the GPL license"
-    echo "h     Print this help message"
-    echo "c     Clean the build directory"
-    echo "b     Build the project"
-    echo "t     Test the project"
-    echo "i     Install the project"
+    echo "Syntax: build.sh [options]"
+    echo "Options:"
+    echo "  -g: Print the GPL license"
+    echo "  -h: Print this help message"
+    echo "  -c: Clean the build directory"
+    echo "  -b: Build the project"
+    echo "  -t: Test the project"
+    echo "  -i: Install the project"
     echo
 }
 
